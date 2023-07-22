@@ -30,14 +30,17 @@ func RandomString(n int) string {
 	return sb.String()
 }
 
+// RandomStrings generate a random owner name
 func RandomOwner() string {
 	return RandomString(6)
 }
 
+// RandomStrings generate a random balance
 func RandomMoney() int64 {
 	return RandomInt(0, 1000)
 }
 
+// RandomStrings generate a random currency in USD-EUR-CAD
 func RandomCurrency() string {
 	currencies := []string{"USD", "EUR", "CAD"}
 	count := len(currencies)
